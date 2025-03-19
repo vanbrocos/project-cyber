@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Site Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="only">
+        <a href="#" class="logo">project</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="cv.html">cv</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portefolio.html">portfolio</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+        </div>
+        <img src="image/vecteezy_main-menu-icon_55157252.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+
+    <header></header>
+
+    <div class="container">
+        <h1>Bienvenue sur notre site</h1>
+        <p>Découvrez nos projets et compétences en développement et cybersécurité.</p>
+        <button class="btn">Explorer</button>
+    </div>
+
+    <!-- Texte translucide sur l'expérience -->
+    <div class="experience-text">
+        <h2>Une Aventure Collective vers l'Excellence</h2>
+        <p>
+            Ce site est le fruit d'une collaboration entre quatre passionnés de développement et de cybersécurité.
+            Ensemble, nous avons relevé des défis techniques, partagé nos idées et appris les uns des autres
+            pour créer une plateforme à notre image : moderne, intuitive et immersive.
+        </p>
+        <p>
+            Chaque ligne de code et chaque élément graphique témoignent de notre engagement et de notre créativité.
+            Ce projet représente bien plus qu'un simple exercice : il est le reflet de notre passion et de notre
+            volonté de bâtir un espace unique pour partager notre travail.
+        </p>
+        <!-- Ajout de l'effet de déplacement -->
+        <strong class="moving-text">Bienvenue dans le numérique !</strong>
+    </div>
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+
+</html>
